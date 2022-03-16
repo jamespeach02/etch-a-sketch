@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Etch-A-Sketch</title>
+</head>
+<style>
+    
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#container {
+    display: grid;
+    grid-gap: 0em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.hovered-over {
+    background-color: black; ;
+}
+.grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+div
+</style>
+<body>
+    <button id="clear-board">Clear Board</button>
+    <div id="container"></div>
+</body>
+</html>
+<script src="script.js"></script> 
